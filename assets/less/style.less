@@ -1,0 +1,167 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+#wrapper {
+    color: #FFFFFF;
+    max-height: 1536px;
+    margin: 0px auto;
+    width: 1920px; 
+    header {
+        align-items: center;
+        background-color: #1E1F25;
+        display: flex;
+        height: 62px;
+        justify-content: space-between;
+        h1{
+            color: #FFFFFF;
+            display: flex;
+            font: 300 21px "Roboto";
+            &::before{
+                content: "";
+                background: url("../images/the_wall_sprite.png") no-repeat -182px -9px;
+                height: 28px;
+                margin: 0px 9px 0px 25px;
+                width: 28px;
+                
+            }
+        }
+        #user_profile_container {
+            display: flex;
+            font: 300 14px "Roboto";
+            #user {
+                display: flex;
+                // margin-right: 26px;
+                padding: 23px 26px 23px 0px;
+                border-right: 2px solid #3A3C46;
+            }
+            #logout{
+                align-items: center;
+                color: #FFFFFF;
+                display: flex;
+                margin: 0px 26px;
+                text-decoration: none;
+                &::before{
+                    content: "";
+                    background: url("../images/the_wall_sprite.png") no-repeat -255px -16px;
+                    align-items: center;
+                    height: 13px;
+                    margin-right: 10px;
+                    width: 13px;
+                }
+            }
+        }
+    } 
+    #main_container {
+        background-color: #2C2D34;
+        display: flex;
+        padding: 50px 471px;
+        flex-direction: column;
+        #welcome_profile_container{
+            #username{
+               
+                font-size: 21px;
+            }
+            #welcome_message{
+                margin-bottom: 56px;
+            }
+        }
+        #post_form{
+            background-color: #3A3C46;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 57px;
+            padding: 15px 20px;
+            width: 978px;
+            #post_textarea{
+                background-color: #3A3C46;
+                border: none;
+                color: #FFFFFF;
+                display: flex;
+                font-size: 17.51px;
+                outline: none;
+                resize: none;
+                width: 860px;
+            }
+            #post_button{
+                background-color: #00A3FF;
+                border-radius: 8.86px;
+                border: none;
+                color: #FFFFFF;
+                cursor: pointer;
+                height: 38px;
+                margin: 6px 0px;
+                padding: 5px;
+                width: 100px;
+            }
+        }
+        h4{
+            font-weight: 400;
+        }
+        #post_forum_container{
+            margin-top: 55px;
+            width: 978px;
+            border-radius: 9px;
+            background-color: #3A3C46;
+            display: flex;
+            flex-direction: column;
+            #post_forum_list{
+                li{
+                    list-style: none;
+                    .post_details_container{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    .action_button_container{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                    }
+                    .comment_form{
+                        width: 902px;
+                    }
+                }
+                #no_post_yet{
+                    background-color: #2C2D34;
+                    margin-top: 55px;
+                    padding: 38px 0px;
+                    width: 978px;
+                    border: 1px dashed #6D6E75;
+                    border-radius: 9px;
+                    display: none;
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+
+        .comment_form {
+            align-items: center;
+            background-color: #3A3C46;
+            display: flex;
+            text-align: right;
+            
+        }
+    }
+    #cloned_template_container{
+        display: none;
+        .comment_textarea {
+            background-color: #3A3C46;
+            border: none;
+            display: flex;
+            height: 50px;
+            padding: 15px 20px;
+            resize: none;
+            width: 90%;
+        }
+        .comment_button {
+            background-color: #00A3FF;
+            cursor: pointer;
+            padding: 5px;
+        }
+    }
+}

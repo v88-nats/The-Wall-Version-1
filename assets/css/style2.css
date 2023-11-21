@@ -1,0 +1,189 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+.border-blue {
+  border: 1px solid #00A3FF;
+}
+.border-red {
+  border: 1px solid red !important;
+}
+#wrapper {
+  display: flex;
+  margin: 0px auto;
+  width: 1000px;
+  height: 672px;
+  background-color: #2C2D34;
+  justify-content: center;
+  padding: 220px;
+}
+#wrapper input {
+  font-size: 16px;
+  border: none;
+  height: 20px;
+  padding: 20px;
+  border-radius: 9px;
+  background-color: #31354F;
+  color: #FFFFFF;
+  outline: none;
+}
+#wrapper input:focus {
+  border: 1px solid #00A3FF !important;
+}
+#wrapper #signup_container {
+  padding: 75px 78px;
+  background-color: #1D1F2B;
+  border-radius: 20px 0px 0px 20px;
+}
+#wrapper #signup_container header {
+  display: flex;
+  margin-bottom: 46px;
+}
+#wrapper #signup_container header::before {
+  content: "";
+  background: url("../images/the_wall_sprite.png") no-repeat 0px 0px;
+  width: 46px;
+  height: 46px;
+  margin-right: 29px;
+}
+#wrapper #signup_container header .user_profile h1 {
+  color: #FFFFFF;
+  margin-bottom: 3px;
+  font: 300 21px 'Roboto';
+}
+#wrapper #signup_container header .user_profile p {
+  color: #6D7186;
+}
+#wrapper #signup_container #signup_form #name_row {
+  display: flex;
+  flex-direction: row;
+}
+#wrapper #signup_container #signup_form #name_row .name_column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+#wrapper #signup_container #signup_form #name_row .name_column label {
+  color: #6D7186;
+  font-size: 14px;
+}
+#wrapper #signup_container #signup_form #name_row .name_column input {
+  margin-top: 8px;
+  display: flex;
+  width: 210px;
+}
+#wrapper #signup_container #signup_form #name_row .name_column input#firstname {
+  margin-right: 15px;
+}
+#wrapper #signup_container #signup_form .details_column {
+  margin-bottom: 16px;
+}
+#wrapper #signup_container #signup_form .details_column label {
+  color: #6D7186;
+  font-size: 14px;
+}
+#wrapper #signup_container #signup_form .details_column input {
+  margin-top: 8px;
+  display: flex;
+  width: 475px;
+}
+#wrapper #signup_container #signup_form #signup_button {
+  background-color: #00A3FF;
+  cursor: pointer;
+  width: 515px;
+  height: 60px;
+  border-radius: 9px;
+  color: #FFFFFF;
+  margin: 10px 0px 40px 0px;
+  font: 500 21px 'Roboto';
+}
+#wrapper #signup_container footer {
+  border-bottom: 75px;
+}
+#wrapper #signup_container footer p {
+  color: #6D7186;
+  text-align: center;
+}
+#wrapper #signup_container footer p a {
+  text-decoration: none;
+}
+#wrapper #signin_container {
+  display: none;
+  padding: 75px 78px;
+  background-color: #1D1F2B;
+  border-radius: 20px 0px 0px 20px;
+}
+#wrapper #signin_container header {
+  display: flex;
+  margin-bottom: 46px;
+}
+#wrapper #signin_container header::before {
+  content: "";
+  background: url("../images/the_wall_sprite.png") no-repeat 0px 0px;
+  width: 46px;
+  height: 46px;
+  margin-right: 29px;
+}
+#wrapper #signin_container header .user_profile h1 {
+  color: #FFFFFF;
+  margin-bottom: 3px;
+  font: 300 21px 'Roboto';
+}
+#wrapper #signin_container header .user_profile p {
+  color: #6D7186;
+}
+#wrapper #signin_container #signin_form .details_column {
+  margin-bottom: 16px;
+}
+#wrapper #signin_container #signin_form .details_column label {
+  color: #6D7186;
+  font-size: 14px;
+}
+#wrapper #signin_container #signin_form .details_column input {
+  margin-top: 8px;
+  display: flex;
+  width: 475px;
+}
+#wrapper #signin_container #signin_form #signin_button {
+  background-color: #00A3FF;
+  cursor: pointer;
+  width: 515px;
+  height: 60px;
+  border-radius: 9px;
+  color: #FFFFFF;
+  margin: 10px 0px 40px 0px;
+  font: 500 21px 'Roboto';
+}
+#wrapper #signin_container footer {
+  border-bottom: 75px;
+}
+#wrapper #signin_container footer p {
+  color: #6D7186;
+  text-align: center;
+}
+#wrapper #signin_container footer p a {
+  text-decoration: none;
+}
+#wrapper aside {
+  width: 205px;
+  background-color: #3B3C43;
+  background-image: url("../images/thewall.png");
+  background-repeat: no-repeat;
+  border-radius: 0px 20px 20px 0px;
+}
+#wrapper aside h3 {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  margin: 75px 0px 0px 51px;
+  letter-spacing: 9px;
+  font: 400 25.55px "Roboto";
+}
+#wrapper aside h3::before {
+  content: "";
+  background: url("../images/the_wall_sprite.png") no-repeat -91px 0px;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 9px;
+}

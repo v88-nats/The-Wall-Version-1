@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wall</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>THE WALL</h1>
+            <div id="user_profile_container">
+                <span id="user">Nathaniel Nardo</span>
+                <a id="logout" href="index2.html">Logout</a>
+            </div>
+        </header>
+
+        <div id="main_container">
+            <div id="welcome_profile_container">
+                <p id="username">Hello Nathaniel,</p>
+                <p id="welcome_message">Welcome to V88 Forum Dashboard</p>
+            </div>
+            <form id="post_form" action="#">
+                <textarea name="topic" id="post_textarea" placeholder="Post your Topic..."></textarea>
+                <button type="submit" id="post_button">Post</button>
+            </form>
+            <h4>Recent Forums</h4>
+            <div id="post_forum_container">   
+                <ul id="post_forum_list">
+                    <li id="no_post_yet">
+                        <p>No post yet.</p>
+                    </li>
+                    <li>
+                        <p data-post-id="" class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="post_details_container">
+                            <p class="post_details">Nathaniel Nardo <span class="post_time"></span></p>
+                            <span class="response">0 Response</span>
+                        </div>
+                        
+                        <div class="action_buttton_container">
+                            <button type="button" class="edit_button"></button>
+                            <button type="button" class="delete_button"></button>
+                        </div>
+    
+                        <form action="#" class="comment_form">
+                            <textarea name="comment" class="comment_textarea"></textarea>
+                            <button type="submit" class="comment_button">Comment</button>
+                        </form>
+
+                        <div class="post_comment_container">
+                            <ul class="post_comment"></ul>
+                        </div>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div id="cloned_template_container">
+            <ul>
+                <li>
+                    <p data-post-id="" class="post">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="post_details_container">
+                        <p class="post_details">Nathaniel Nardo <span class="post_time"></span></p>
+                        <span class="response">0 Response</span>
+                    </div>
+                    <div class="action_buttton_container">
+                        <button type="button" class="edit_button"></button>
+                        <button type="button" class="delete_button"></button>
+                    </div>
+                    <div class="post_comment_container">
+                        <ul class="post_comment"></ul>
+                    </div>
+
+                    <form action="#" class="comment_form">
+                        <textarea name="comment" class="comment_textarea"></textarea>
+                        <button type="submit" class="comment_button">Comment</button>
+                    </form>
+                </li>
+            </ul>
+        </div>    
+    </div>
+</body>
+</html>
